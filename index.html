@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Boys - שיף בנמל</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+            <h1 class="logo-main">The Boys</h1>
+                <p class="logo-sub">שיף – בנמל</p>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#hero" class="nav-link">בית</a></li>
+                <li><a href="#about" class="nav-link">עלינו</a></li>
+                <li><a href="#menu" class="nav-link">תפריט</a></li>
+                <li><a href="#reviews" class="nav-link">המלצות</a></li>
+                <li><a href="#contact" class="nav-link">צור קשר</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <div class="nav-logo">
+                <img src="images/logo.png" alt="The Boys - שיף בנמל" class="logo-image">
+            </div>
+            <p class="hero-tagline">השניצל הכי קריספי בנמל</p>
+            <a href="https://wa.me/972501234567" class="cta-button glow-button">
+                <i class="fab fa-whatsapp"></i>
+                הזמן עכשיו
+            </a>
+        </div>
+        <div class="hero-background"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">על העסק</h2>
+            <div class="about-content">
+                <p class="about-text">
+                    אנחנו The Boys – שיף בנמל. פתחנו את המקום מתוך אהבה לשניצל אמיתי. 
+                    כל מנה מוגשת טרייה, קריספית, עם תיבול מיוחד ואווירה של הנמל.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2 class="section-title">תפריט נבחר</h2>
+            <div class="menu-grid">
+                <div class="menu-item" data-menu="HalatSchnitzel">
+                    <div class="menu-image">
+                        <img src="images/sandwiches.png" alt="שניצל בבאגט">
+                        <div class="menu-overlay">
+                            <span class="menu-price">₪45</span>
+                        </div>
+                    </div>
+                    <div class="menu-content">
+                        <h3>חלת שניצל</h3>
+                        <p class="menu-description">שניצל עוף קריספי בבאגט טרי עם ירקות טריים, מיונז ביתי וצ'יפס צד</p>
+                        <button class="menu-details-btn">פרטים מלאים</button>
+                    </div>
+                </div>
+                <div class="menu-item" data-menu="HalatAsado">
+                    <div class="menu-image">
+                        <img src="images/sandwiches.png" alt="שניצל קומבו">
+                        <div class="menu-overlay">
+                            <span class="menu-price">₪65</span>
+                        </div>
+                    </div>
+                    <div class="menu-content">
+                        <h3>חלת אסאדו</h3>
+                        <p class="menu-description">שניצל עוף ענק עם צ'יפס קריספי, סלט טרי, מיונז ביתי ובחירת שתייה</p>
+                        <button class="menu-details-btn">פרטים מלאים</button>
+                    </div>
+                </div>
+                <div class="menu-item" data-menu="Childrensportion">
+                    <div class="menu-image">
+                        <img src="images/sandwiches.png" alt="שניצל קומבו">
+                        <div class="menu-overlay">
+                            <span class="menu-price">₪65</span>
+                        </div>
+                    </div>
+                    <div class="menu-content">
+                        <h3>מנת ילדים</h3>
+                        <p class="menu-description">שניצל עוף ענק עם צ'יפס קריספי, סלט טרי, מיונז ביתי ובחירת שתייה</p>
+                        <button class="menu-details-btn">פרטים מלאים</button>
+                    </div>
+                </div>
+                <div class="menu-item" data-menu="Schnitzelsalad">
+                    <div class="menu-image">
+                        <img src="images/sandwiches.png" alt="שניצל קומבו">
+                        <div class="menu-overlay">
+                            <span class="menu-price">₪65</span>
+                        </div>
+                    </div>
+                    <div class="menu-content">
+                        <h3>סלט שניצל</h3>
+                        <p class="menu-description">שניצל עוף ענק עם צ'יפס קריספי, סלט טרי, מיונז ביתי ובחירת שתייה</p>
+                        <button class="menu-details-btn">פרטים מלאים</button>
+                    </div>
+                </div>
+                <div class="menu-item" data-menu="schnitzels">
+                    <div class="menu-image">
+                        <img src="images/sandwiches.png" alt="שניצל קומבו">
+                        <div class="menu-overlay">
+                            <span class="menu-price">₪65</span>
+                        </div>
+                    </div>
+                    <div class="menu-content">
+                        <h3>שניצלונים</h3>
+                        <p class="menu-description">שניצל עוף ענק עם צ'יפס קריספי, סלט טרי, מיונז ביתי ובחירת שתייה</p>
+                        <button class="menu-details-btn">פרטים מלאים</button>
+                    </div>
+                </div>
+                <div class="menu-item" data-menu="Snackwings">
+                    <div class="menu-image">
+                        <img src="images/sandwiches.png" alt="שניצל קומבו">
+                        <div class="menu-overlay">
+                            <span class="menu-price">₪65</span>
+                        </div>
+                    </div>
+                    <div class="menu-content">
+                        <h3>כנפיים נשנוש</h3>
+                        <p class="menu-description">שניצל עוף ענק עם צ'יפס קריספי, סלט טרי, מיונז ביתי ובחירת שתייה</p>
+                        <button class="menu-details-btn">פרטים מלאים</button>
+                    </div>
+                </div>
+                <div class="menu-item" data-menu="Potatochips">
+                    <div class="menu-image">
+                        <img src="images/sandwiches.png" alt="שניצל קומבו">
+                        <div class="menu-overlay">
+                            <span class="menu-price">₪65</span>
+                        </div>
+                    </div>
+                    <div class="menu-content">
+                        <h3>צ'יפס תפוח אדמה</h3>
+                        <p class="menu-description">שניצל עוף ענק עם צ'יפס קריספי, סלט טרי, מיונז ביתי ובחירת שתייה</p>
+                        <button class="menu-details-btn">פרטים מלאים</button>
+                    </div>
+                </div>
+                <div class="menu-item" data-menu="Sweetpotatochips">
+                    <div class="menu-image">
+                        <img src="images/sandwiches.png" alt="שניצל קומבו">
+                        <div class="menu-overlay">
+                            <span class="menu-price">₪65</span>
+                        </div>
+                    </div>
+                    <div class="menu-content">
+                        <h3>צ'יפס בטטה</h3>
+                        <p class="menu-description">שניצל עוף ענק עם צ'יפס קריספי, סלט טרי, מיונז ביתי ובחירת שתייה</p>
+                        <button class="menu-details-btn">פרטים מלאים</button>
+                    </div>
+                </div>
+                <div class="menu-item" data-menu="Onionrings">
+                    <div class="menu-image">
+                        <img src="images/sandwiches.png" alt="שניצל XL">
+                        <div class="menu-overlay">
+                            <span class="menu-price">₪75</span>
+                        </div>
+                    </div>
+                    <div class="menu-content">
+                        <h3>טבעות בצל</h3>
+                        <p class="menu-description">שניצל עוף ענק עם סלט יווני טרי, צ'יפס, טחינה ביתית ולחם טרי</p>
+                        <button class="menu-details-btn">פרטים מלאים</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div><hr></div>
+
+    <!-- <section id="reviews" class="reviews">
+        <div class="container">
+            <h2 class="section-title">מה הלקוחות אומרים</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <img src="images/customer-1.jpg" alt="דוד כהן" class="reviewer-image">
+                            <div class="reviewer-details">
+                                <h4>דוד כהן</h4>
+                                <span class="reviewer-location">תל אביב</span>
+                            </div>
+                        </div>
+                        <div class="review-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="review-date">לפני שבוע</span>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        <p>"השניצל הכי טעים שאכלתי בחיים! הקריספיות המושלמת, התיבול המדויק, והאווירה של הנמל - פשוט חוויה שלא תשכחו. חובה לחזור!"</p>
+                    </div>
+                    <div class="review-footer">
+                        <span class="review-dish">שניצל קומבו</span>
+                        <span class="verified-badge">
+                            <i class="fas fa-check-circle"></i>
+                            לקוח מאומת
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <img src="images/customer-2.jpg" alt="שרה לוי" class="reviewer-image">
+                            <div class="reviewer-details">
+                                <h4>שרה לוי</h4>
+                                <span class="reviewer-location">רמת גן</span>
+                            </div>
+                        </div>
+                        <div class="review-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="review-date">לפני 3 ימים</span>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        <p>"מנות נדיבות במיוחד, שירות אדיב ומקצועי, והאווירה - אין כזו בשום מקום אחר. המקום הפך להיות הכתובת הקבועה שלנו לארוחות משפחתיות."</p>
+                    </div>
+                    <div class="review-footer">
+                        <span class="review-dish">שניצל XL</span>
+                        <span class="verified-badge">
+                            <i class="fas fa-check-circle"></i>
+                            לקוח מאומת
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <img src="images/customer-3.jpg" alt="משה ישראלי" class="reviewer-image">
+                            <div class="reviewer-details">
+                                <h4>משה ישראלי</h4>
+                                <span class="reviewer-location">חולון</span>
+                            </div>
+                        </div>
+                        <div class="review-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="review-date">אתמול</span>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        <p>"המקום הכי טוב לשניצל בנמל! האיכות עקבית, המחירים הוגנים, והטעם - פשוט מדהים. כבר הפצתי את הבשורה לכל החברים!"</p>
+                    </div>
+                    <div class="review-footer">
+                        <span class="review-dish">שניצל בבאגט</span>
+                        <span class="verified-badge">
+                            <i class="fas fa-check-circle"></i>
+                            לקוח מאומת
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="reviews-stats">
+                <div class="stat-item">
+                    <div class="stat-number">4.9</div>
+                    <div class="stat-label">דירוג ממוצע</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">המלצות חיוביות</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">לקוחות מרוצים</div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">מיקום ושעות פתיחה</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>כתובת</h3>
+                            <p>נמל העיר</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>טלפון להזמנות</h3>
+                            <p><a href="tel:+972501234567">050-123-4567</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>שעות פתיחה</h3>
+                            <p>א-ה 11:00–23:00</p>
+                            <p>שישי–שבת 12:00–01:00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3380.0!2d34.7818!3d32.0853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzLCsDA1JzA3LjEiTiAzNMKwNDYnNTQuNSJF!5e0!3m2!1sen!2sil!4v1234567890"
+                        width="100%" 
+                        height="300" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <h2>The Boys</h2>
+                    <p>שיף – בנמל</p>
+                    <a href="https://wa.me/972501234567" class="footer-cta glow-button">
+                        <i class="fab fa-whatsapp"></i>
+                        בואו לטעום
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 The Boys - שיף בנמל. כל הזכויות שמורות.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Menu Modals -->
+    <div id="menuModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modalImage" src="" alt="">
+                </div>
+                <div class="modal-info">
+                    <h2 id="modalTitle"></h2>
+                    <div class="modal-price" id="modalPrice"></div>
+                    <p id="modalDescription"></p>
+                    <div class="modal-ingredients">
+                        <h3>רכיבים:</h3>
+                        <ul id="modalIngredients"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html> 
