@@ -12,9 +12,12 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="nav-logo">
-            <h1 class="logo-main">The Boys</h1>
-                <p class="logo-sub">שיף – בנמל</p>
+                        <div class="nav-logo">
+                <div class="logo-container">
+                    <h1 class="logo-main">The Boys</h1>
+                    <p class="logo-sub">שיף – בנמל</p>
+                </div>
+                <img src="images/kosher.png" alt="כשר למהדרין" class="kosher-badge">
             </div>
             <ul class="nav-menu">
                 <li><a href="#hero" class="nav-link">בית</a></li>
@@ -23,6 +26,10 @@
                 <li><a href="#reviews" class="nav-link">המלצות</a></li>
                 <li><a href="#contact" class="nav-link">צור קשר</a></li>
             </ul>
+            <a href="https://wa.me/972587701009" class="nav-cta-button glow-button">
+                <i class="fab fa-whatsapp"></i>
+                הזמן עכשיו
+            </a>
             <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -38,12 +45,26 @@
                 <img src="images/logo.png" alt="The Boys - שיף בנמל" class="logo-image">
             </div>
             <p class="hero-tagline">השניצל הכי קריספי בנמל</p>
-            <a href="https://wa.me/972587701009" class="cta-button glow-button">
-                <i class="fab fa-whatsapp"></i>
-                הזמן עכשיו
-            </a>
         </div>
         <div class="hero-background"></div>
+        <!-- Mobile CTA Section -->
+        <div class="mobile-cta-section">
+            <div class="mobile-kosher-container">
+                <img src="images/kosher.png" alt="כשר למהדרין" class="mobile-kosher-badge">
+            </div>
+            <div class="mobile-button-container">
+                <a href="https://wa.me/972587701009?text=שלום! אני מעוניין להזמין" class="mobile-cta-button">
+                    <i class="fab fa-whatsapp"></i>
+                    הזמן עכשיו
+                </a>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
     </section>
 
     <!-- About Section -->
@@ -52,8 +73,7 @@
             <h2 class="section-title">על העסק</h2>
             <div class="about-content">
                 <p class="about-text">
-                    אנחנו The Boys – שיף בנמל. פתחנו את המקום מתוך אהבה לשניצל אמיתי. 
-                    כל מנה מוגשת טרייה, קריספית, עם תיבול מיוחד ואווירה של הנמל.
+                    ברוכים הבאים ל-The Boys – שיף בנמל, מקום שבו כל מנה נוצרת מתוך תשוקה להביא לכם את החוויה הקולינרית המלאה, מתוך צורך לספק אוכל כשר למהדרין ברמה גבוהה. אצלנו תמצאו אוכל טרי ומלא טעמים, עם תיבולים מיוחדים שמביאים כל ביס לחוויה אחרת. המסעדה מנוהלת על ידי בעלי ניסיון מהקהילה החב"דית, שמקפידים על כל פרט כדי להעניק לכם לא רק אוכל, אלא חוויה של טעם, איכות והנאה אמיתית בכל ביקור.
                 </p>
             </div>
         </div>
@@ -66,20 +86,20 @@
             <div class="menu-grid">
                 <div class="menu-item" data-menu="HalatSchnitzel">
                     <div class="menu-image">
-                        <img src="images/sandwiches.png" alt="שניצל בבאגט">
+                        <img src="images/sandwiches.png" alt="חלת שניצל">
                         <div class="menu-overlay">
                             <span class="menu-price">₪45</span>
                         </div>
                     </div>
                     <div class="menu-content">
                         <h3>חלת שניצל</h3>
-                        <p class="menu-description">שניצל עוף קריספי בבאגט טרי עם ירקות טריים, מיונז ביתי וצ'יפס צד</p>
+                        <p class="menu-description">חלה טרייה ורכה ממולאת בשניצל עוף פריך וזהוב, עם ירקות טריים ורטבים לבחירה. ביס מושלם של בית, קראנץ' וטעם ממכר.</p>
                         <button class="menu-details-btn">פרטים מלאים</button>
                     </div>
                 </div>
                 <div class="menu-item" data-menu="HalatAsado">
                     <div class="menu-image">
-                        <img src="images/sandwiches.png" alt="שניצל קומבו">
+                        <img src="images/sandwiches.png" alt="חלת אסאדו">
                         <div class="menu-overlay">
                             <span class="menu-price">₪65</span>
                         </div>
@@ -92,7 +112,7 @@
                 </div>
                 <div class="menu-item" data-menu="Childrensportion">
                     <div class="menu-image">
-                        <img src="images/sandwiches.png" alt="שניצל קומבו">
+                        <img src="images/sandwiches.png" alt="מנת ילדים">
                         <div class="menu-overlay">
                             <span class="menu-price">₪65</span>
                         </div>

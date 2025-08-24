@@ -48,6 +48,11 @@ const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add('fade-in-up');
+            
+            // Special handling for about section
+            if (entry.target.id === 'about') {
+                entry.target.classList.add('visible');
+            }
         }
     });
 }, observerOptions);
@@ -57,9 +62,9 @@ document.querySelectorAll('section').forEach(section => {
     observer.observe(section);
 });
 
-// Observe menu items and review cards
-document.querySelectorAll('.menu-item, .review-card').forEach(item => {
-    observer.observe(item);
+// Observe only sections for animation (menu items removed)
+document.querySelectorAll('section').forEach(section => {
+    observer.observe(section);
 });
 
 // Add loading animation to page
@@ -191,21 +196,21 @@ const menuData = {
     HalatSchnitzel: {
         title: 'חלת שניצל',
         price: '₪45',
-        description: 'שניצל עוף קריספי בבאגט טרי עם ירקות טריים, מיונז ביתי וצ\'יפס צד. המנה המושלמת לארוחה מהירה וטעימה.',
+        description: 'חלה טרייה ורכה ממולאת בשניצל עוף פריך וזהוב, עם ירקות טריים ורטבים לבחירה. ביס מושלם של בית, קראנץ\' וטעם ממכר.',
         image: 'images/sandwiches.png',
         ingredients: [
-            'שניצל עוף טרי',
-            'באגט טרי',
-            'ירקות טריים (חסה, עגבניה, מלפפון)',
-            'מיונז ביתי',
-            'צ\'יפס קריספי',
-            'תבלינים מיוחדים'
+            'חלה טרייה ורכה',
+            'שניצל עוף פריך וזהוב',
+            'מטבוחת הבית',
+            'חצילים',
+            'כרוב סגול מיונז',
+            'חסה פריכה'
         ]
     },
     HalatAsado: {
         title: 'חלת אסאדו',
         price: '₪45',
-        description: 'שניצל עוף קריספי בבאגט טרי עם ירקות טריים, מיונז ביתי וצ\'יפס צד. המנה המושלמת לארוחה מהירה וטעימה.',
+        description: 'נתחי אסאדו עסיסיים בבישול ארוך, מתפוררים ברכות ומוגשים בתוך חלה טרייה ורכה – יחד עם צ’יפס פריך, ירקות טריים ורטבים לבחירה. ',
         image: 'images/sandwiches.png',
         ingredients: [
             'שניצל עוף טרי',
@@ -366,5 +371,38 @@ window.addEventListener('click', (e) => {
 document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && modal.classList.contains('show')) {
         closeModal();
+    }
+});
+
+// Scroll indicator functionality
+const scrollIndicator = document.querySelector('.scroll-indicator');
+const scrollArrow = document.querySelector('.scroll-arrow');
+
+if (scrollArrow) {
+    scrollArrow.addEventListener('click', () => {
+        const aboutSection = document.getElementById('about');
+        if (aboutSection) {
+            const navbarHeight = document.querySelector('.navbar').offsetHeight;
+            const aboutSectionTop = aboutSection.offsetTop;
+            
+            window.scrollTo({
+                top: aboutSectionTop - navbarHeight - 0,
+                behavior: 'smooth'
+            });
+        }
+    });
+}
+
+// Hide scroll indicator when scrolled down
+window.addEventListener('scroll', () => {
+    if (scrollIndicator) {
+        const scrollTop = window.pageYOffset;
+        if (scrollTop > 100) {
+            scrollIndicator.style.opacity = '0';
+            scrollIndicator.style.transform = 'translateX(-50%) translateY(20px)';
+        } else {
+            scrollIndicator.style.opacity = '1';
+            scrollIndicator.style.transform = 'translateX(-50%) translateY(0)';
+        }
     }
 }); 
